@@ -12,7 +12,7 @@
 
    - name: set cpu usage
      set-fact:
-                user_cpu: "{{cpu_output.stdout_lines[2]}}"
+       user_cpu: "{{cpu_output.stdout_lines[2]}}"
 
    - name: output cpu usage in stdout
      debug:
