@@ -1,6 +1,8 @@
 ---
 - hosts: localhost
+  vars_files:
+    - Vars/global.yml
   tasks:
   - name: debug
     debug:
-      msg: "test git"
+      msg: "{{th_value}}"
