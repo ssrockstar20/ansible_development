@@ -6,9 +6,9 @@
      shell: "top -b -n 1" 
      register: cpu_output
 
-    - name: output of cpu usage
-      debug:
-        msg: "{{cpu_output}}"
+   - name: output of cpu usage
+     debug:
+       msg: "{{cpu_output}}"
     
       
 
