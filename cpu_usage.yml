@@ -18,9 +18,9 @@
      debug:
        msg: "{{user_cpu}}"
 
-    - name: printing th value
-      debug:
-        msg: "{{th_value}}"
+   - name: printing th value
+     debug:
+       msg: "{{th_value}}"
     
       
 
