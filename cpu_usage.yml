@@ -10,7 +10,7 @@
      debug:
        msg: "{{cpu_output}}"
 
-    - name: set cpu usage
+   - name: set cpu usage
       set-fact:
                 user_cpu: "{{cpu_output.stdout_lines[2]}}"
 
