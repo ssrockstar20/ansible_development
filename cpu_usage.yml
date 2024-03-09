@@ -12,7 +12,7 @@
 
    - name: set cpu usage
      set_fact:
-       user_cpu: "{{cpu_output.stdout_lines[2].split()}}"
+       user_cpu: "{{cpu_output.stdout_lines[2].split()[1]}}"
 
    - name: output cpu usage in stdout
      debug:
