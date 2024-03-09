@@ -1,8 +1,8 @@
 ---
 - hosts: localhost
   gather_facts: false
-  vars:
-   - global.yml 
+  vars_files:
+   - Vars/global.yml 
   tasks:
    - name: Get CPU usage 
      shell: "top -b -n 1" 
