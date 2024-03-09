@@ -17,6 +17,10 @@
    - name: output cpu usage in stdout
      debug:
        msg: "{{user_cpu}}"
+
+    - name: printing th value
+      debug:
+        msg: "{{th_value}}"
     
       
 
