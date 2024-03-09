@@ -9,6 +9,14 @@
    - name: output of cpu usage
      debug:
        msg: "{{cpu_output}}"
+
+    - name: set cpu usage
+      set-fact:
+                user_cpu: "{{cpu_output.stdout_lines[2]}}"
+
+    - name: output cpu usage in stdout
+      debug:
+        msg: "{{user_cpu}}"
     
       
 
