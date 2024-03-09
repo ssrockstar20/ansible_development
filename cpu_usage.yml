@@ -1,6 +1,8 @@
 ---
 - hosts: localhost
   gather_facts: false
+  vars_files:
+   - global.yml 
   tasks:
    - name: Get CPU usage 
      shell: "top -b -n 1" 
@@ -17,6 +19,8 @@
    - name: output cpu usage in stdout
      debug:
        msg: "{{user_cpu}}"
+
+  
 
    - name: printing th value
      debug:
