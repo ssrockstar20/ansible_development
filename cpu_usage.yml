@@ -1,7 +1,7 @@
 ---
 - hosts: localhost
   gather_facts: false
-   tasks:
+  tasks:
    - name: Get CPU usage 
      shell: "top -b -n 1" 
      register: cpu_output
