@@ -15,8 +15,8 @@
                 user_cpu: "{{cpu_output.stdout_lines[2]}}"
 
    - name: output cpu usage in stdout
-      debug:
-        msg: "{{user_cpu}}"
+     debug:
+       msg: "{{user_cpu}}"
     
       
 
