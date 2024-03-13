@@ -25,6 +25,9 @@
    - name: printing th value
      debug:
        msg: "{{th_value}}"
+
+   - name: comparing two values
+      when: "{{user_cpu}}" == "{{th_value}}"
     
       
 
