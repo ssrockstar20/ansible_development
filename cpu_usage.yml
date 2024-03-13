@@ -27,7 +27,9 @@
        msg: "{{th_value}}"
 
    - name: comparing two values
-      when: "{{user_cpu}}" == "{{th_value}}"
+     debug:
+       msg: "Cpu is under threshhold value , No actions needed"
+     when: user_cpu == th_value
     
       
 
